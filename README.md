@@ -1,4 +1,4 @@
-# memb-mechanical-properties  #
+# memb-mechanical-properties 
 
 
 leaflet area compressibility Ka calculation:
