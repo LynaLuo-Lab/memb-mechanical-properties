@@ -1,0 +1,45 @@
+integrator               = md			; MD integrator
+tinit                    = 0
+dt                       = 0.002		; 2 fs timestep
+nsteps                   = 10000000		; Number of steps
+pbc			 = xyz			; Periodic boundary conditions in xyz
+comm-mode                = linear			
+nstcomm                  = 1
+comm-grps                = 			; Remove COM for monolayers separately
+
+; OUTPUT CONTROL OPTIONS
+nstxout                  = 0			; Do not want .trr-files
+nstxtcout                = 10000		; But do want .xtc-files
+nstvout                  = 0			; No velocities in output
+nstfout                  = 0			; No forces in output
+ns_type			 = grid			; Fastest option
+nstenergy		 = 100			; .edr-file output
+
+; OPTIONS FOR ELECTROSTATICS AND VDW
+cutoff-scheme           = Verlet
+nstlist                 = 20
+rlist                   = 1.2
+coulombtype             = pme
+rcoulomb                = 1.2
+vdwtype                 = Cut-off
+vdw-modifier            = Force-switch
+rvdw_switch             = 1.0
+rvdw                    = 1.2
+;
+; OPTIONS FOR WEAK COUPLING ALGORITHMS 
+tcoupl                  = Nose-Hoover
+tc_grps                 = MEMB   SOL_ION
+tau_t                   = 1.0    1.0
+ref_t                   = 303.15 303.15
+;
+pcoupl                   = no
+
+; CONSTRAINTS
+constraints              = h-bonds		; Constrain h-bonds
+constraint-algorithm     = Lincs		; With Lincs
+
+periodic_molecules       = yes
+comm_grps               = MEMB   SOL_ION
+
+;non-equilibrium MD setting
+deform    = 0  0  0  0.001613 0 0 ; nm/ps
