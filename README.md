@@ -2,6 +2,7 @@
 
 
 leaflet area compressibility Ka calculation:
+for multi-component bilayer, if the majority is POPC, POPC will be selected only for the atomNames.txt. 
 --------------------------------------------------------------------------------------
 Package for Calculating Leaflet Ka Moduli from All-Atom MD Simulaions
 
