@@ -1,0 +1,101 @@
+Generating the water and lipid densities and boundary surface
+Calculating densities on 1000 frames
+Generating water density
+map size [178.382, 178.53, 174.757]
+Generating lipid density
+map size [178.38, 178.518, 173.965]
+Calculating the interface between the two densities
+calculating the normals 3226.3414101600647
+5000 normals out of 13260 in 2.2129805088043213 seconds
+10000 normals out of 13260 in 3.921388626098633 seconds
+{'all': ''} {'all': '(rname=OPC and aname=P,C2) or (rname=API and aname=P,C2)'}
+Assigning normals for all  (rname=OPC and aname=P,C2) or (rname=API and aname=P,C2)
+assigning normals to lipids ['OPC', 'API']
+rname=OPC and aname=P,C2
+800
+done for OPC in 790.499041557312 seconds
+rname=API and aname=P,C2
+40
+done for API in 181.08718371391296 seconds
+lipid normal dict dict_keys(['OPC', 'API'])
+Done in 4234.413784980774 seconds
+calculating tilts for 
+analyzing lipid tilts for ['OPC', 'API']
+starting for OPC
+starting for API
+Caalculating tilts again only for the lipids with bool prop do_tilt
+analyzing lipid tilts for ['OPC', 'API']
+starting for OPC
+starting for API
+Done in 3.1798126697540283 seconds
+calculating splay for 
+selecting all the lipids using rname=OPC,API
+selection for distance calculation (rname=OPC and aname=C21,C22,C23,C31,C32,C33) or (rname=API and aname=C21,C22,C23,C31,C32,C33)
+do_splay ['OPC', 'API']
+frame 0 in 0.3738579750061035 seconds
+frame 50 in 15.487192869186401 seconds
+frame 100 in 31.0678288936615 seconds
+frame 150 in 45.632718324661255 seconds
+frame 200 in 61.03056073188782 seconds
+frame 250 in 76.30375385284424 seconds
+frame 300 in 91.02278113365173 seconds
+frame 350 in 105.12696528434753 seconds
+frame 400 in 120.63128542900085 seconds
+frame 450 in 134.91838216781616 seconds
+frame 500 in 149.12885642051697 seconds
+frame 550 in 163.3020257949829 seconds
+frame 600 in 177.32609844207764 seconds
+frame 650 in 191.75719237327576 seconds
+frame 700 in 206.5080964565277 seconds
+frame 750 in 221.1982386112213 seconds
+frame 800 in 236.07924556732178 seconds
+frame 850 in 251.00920510292053 seconds
+frame 900 in 266.54421043395996 seconds
+frame 950 in 282.2627372741699 seconds
+done in 297.4645140171051 seconds. Computed 382126 splays
+Done in 297.6455738544464 seconds
+sele_name all
+Gaussian y=A exp[(x-mu)/sigma^2] fitted to splay distribution with A=10.5,mu=-0.0 and sigma=0.04
+Using the following ranges to fit the PMF: [(-0.03808490707363783, 0.037232109818180315), (-0.0474995341851151, 0.04664673692965758), (-0.056914161296592373, 0.056061364041134855), (-0.06632878840806963, 0.06547599115261213), (-0.0757434155195469, 0.0748906182640894)]
+fit Parabole: [-2.36522542e+00  3.84771622e+02 -4.59384704e-04]
+fit Parabole: [-2.36376796e+00  3.82007708e+02 -4.83090526e-04]
+fit Parabole: [-2.35524748e+00  3.66203406e+02 -6.05317710e-04]
+fit Parabole: [-2.34433577e+00  3.51817065e+02 -4.30159695e-04]
+fit Parabole: [-2.33471186e+00  3.42413652e+02 -1.96112645e-04]
+test part res_list: [array([-2.36522542e+00,  3.84771622e+02, -4.59384704e-04]), array([-2.36376796e+00,  3.82007708e+02, -4.83090526e-04]), array([-2.35524748e+00,  3.66203406e+02, -6.05317710e-04]), array([-2.34433577e+00,  3.51817065e+02, -4.30159695e-04]), array([-2.33471186e+00,  3.42413652e+02, -1.96112645e-04])]
+test part lipid area: 64.3
+test part K_list: [11.96801312883427, 11.882043804922164, 11.39046363096847, 10.942988017711858, 10.650502396893684]
+test part K: 11.96801312883427
+test part deltaK: 0.5138467134752781
+Splay modulus for all OPC-OPC is k=11.97 +/- 0.51.
+Gaussian y=A exp[(x-mu)/sigma^2] fitted to splay distribution with A=10.52,mu=-0.0 and sigma=0.04
+Using the following ranges to fit the PMF: [(-0.04149813552784767, 0.03361456546004404), (-0.05088722315133413, 0.0430036530835305), (-0.060276310774820596, 0.052392740707016966), (-0.06966539839830706, 0.06178182833050343), (-0.07905448602179352, 0.07117091595398989)]
+fit Parabole: [-2.36717044e+00  3.88119653e+02 -2.22819187e-03]
+fit Parabole: [-2.35441152e+00  3.60037295e+02 -3.74480008e-03]
+fit Parabole: [-2.35879444e+00  3.70375414e+02 -4.42585747e-03]
+fit Parabole: [-2.35184414e+00  3.62821909e+02 -5.23230776e-03]
+fit Parabole: [-2.33733522e+00  3.47629749e+02 -5.51032552e-03]
+test part res_list: [array([-2.36717044e+00,  3.88119653e+02, -2.22819187e-03]), array([-2.35441152e+00,  3.60037295e+02, -3.74480008e-03]), array([-2.35879444e+00,  3.70375414e+02, -4.42585747e-03]), array([-2.35184414e+00,  3.62821909e+02, -5.23230776e-03]), array([-2.33733522e+00,  3.47629749e+02, -5.51032552e-03])]
+test part lipid area: 64.3
+test part K_list: [12.072150954590922, 11.19867169048978, 11.520230612072776, 11.285284896303267, 10.812744913535154]
+test part K: 12.072150954590922
+test part deltaK: 0.41529338363054313
+Splay modulus for all OPC-API is k=12.07 +/- 0.42.
+Gaussian y=A exp[(x-mu)/sigma^2] fitted to splay distribution with A=11.02,mu=0.03 and sigma=0.04
+Using the following ranges to fit the PMF: [(-0.004878862335013355, 0.06683729383668296), (-0.013843381856475392, 0.075801813358145), (-0.022807901377937437, 0.08476633287960704), (-0.03177242089939947, 0.09373085240106907), (-0.04073694042086151, 0.10269537192253111)]
+fit Parabole: [-2.46034244e+00  7.14272675e+02  2.85985935e-02]
+fit Parabole: [-2.36557446e+00  4.21079032e+02  3.11502083e-02]
+fit Parabole: [-2.33893047e+00  3.67301102e+02  3.02571642e-02]
+fit Parabole: [-2.36916961e+00  4.15214476e+02  3.30505456e-02]
+fit Parabole: [-2.34060435e+00  3.85125327e+02  3.26998284e-02]
+test part res_list: [array([-2.46034244e+00,  7.14272675e+02,  2.85985935e-02]), array([-2.36557446e+00,  4.21079032e+02,  3.11502083e-02]), array([-2.33893047e+00,  3.67301102e+02,  3.02571642e-02]), array([-2.36916961e+00,  4.15214476e+02,  3.30505456e-02]), array([-2.34060435e+00,  3.85125327e+02,  3.26998284e-02])]
+test part lipid area: 64.3
+test part K_list: [22.216879455833197, 13.097326020561276, 11.424606598340763, 12.91491370555602, 11.97901483931621]
+test part K: 22.216879455833197
+test part deltaK: 3.992322741915297
+Splay modulus for all API-API is k=22.22 +/- 3.99.
+weighting ni [347000, 34320, 806]
+weighting ntot 382126.0
+weighting 11.988966863735042
+weighting dk 0.46969714718362515
+weighting kdict {'tilt': {}, 'splay': {'all': {'OPC-OPC': (11.96801312883427, 0.5138467134752781), 'OPC-API': (12.072150954590922, 0.41529338363054313), 'API-API': (22.216879455833197, 3.992322741915297), 'agregated': (11.988966863735042, 0.46969714718362515)}}}

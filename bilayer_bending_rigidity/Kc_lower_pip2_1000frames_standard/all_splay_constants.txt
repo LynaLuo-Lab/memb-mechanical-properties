@@ -1,0 +1,4 @@
+OPC-OPC 12.0 0.5
+OPC-API 12.1 0.4
+API-API 22.2 4.0
+agregated 12.0 0.5
