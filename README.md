@@ -30,3 +30,8 @@ Here input and output pdb and dcd files are not uploaded here for size issues. B
 
 
 To run the code, python3 pip2_elastic_properties.py 
+
+
+Shear viscosity calculation:
+------------------------
+The main process 1) run shear deformation simulation in GROMACS 2016 version, the shear.mdp file is uploaded which includes the deformation = [0, 0, 0, rz, 0, 0 ], which deforms in xy-plane and gives gradient along y-axis. 2) calculation <Pxy> and use Eq.7 from our paper to calculate surface shear viscosity. Details about this method can be found in paper: DOI: 10.1021/acs.jctc.9b00683
