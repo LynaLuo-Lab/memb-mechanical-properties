@@ -1,0 +1,25 @@
+#!/bin/bash
+
+sed -n -e '/^PRESSUREPROFILE:/p' run_press.out > run_press_1
+sed -n -e '/^PPROFILEINTERNAL:/p' run_press.out > run_press_kin_1
+sed -n -e '/^PPROFILEBONDED:/p' run_press.out > run_press_bond_1
+sed -n -e '/^PPROFILENONBONDED:/p' run_press.out > run_press_nonbond_1
+
+sed 's/PRESSUREPROFILE: //g' run_press_1 > run_press
+sed 's/PPROFILEINTERNAL: //g' run_press_kin_1 > run_press_kin
+sed 's/PPROFILEBONDED: //g' run_press_bond_1 > run_press_bond
+sed 's/PPROFILENONBONDED: //g' run_press_nonbond_1 > run_press_nonbond
+
+rm run_press_1
+rm run_press_kin_1
+rm run_press_bond_1
+rm run_press_nonbond_1
+
+sed -n -e '/^PRESSUREPROFILE:/p' run_ewald.out > run_ewald_1
+
+sed 's/PRESSUREPROFILE: //g' run_ewald_1 > run_ewald
+
+rm run_ewald_1
+
+sed -n -e '/THICKNESS/p' run_press.out | awk '{print $4}' > press_slabs.txt
+sed -n -e '/THICKNESS/p' run_ewald.out | awk '{print $4}' > ewald_slabs.txt
