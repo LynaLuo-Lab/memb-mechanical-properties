@@ -1,7 +1,7 @@
 # memb-mechanical-properties 
 
 
-leaflet area compressibility Ka calculation:
+Leaflet area compressibility (Ka) calculation:
 ------------------------
 
 For multi-component bilayer, if the majority is POPC, POPC will be selected only for the atomNames.txt. 
@@ -15,8 +15,13 @@ Package Link from Milka's paper(doi.org/10.1016/j.bpj.2018.12.016): https://www.
 
 
 
-leaflet tension calculation:
+Leaflet tension calculation:
 ------------------------
 I refer to Milka's paper(doi.org/10.1016/j.bpj.2018.12.016) provided in pressure_profiles_NAMD.zip, which is also uploaded in the bilayer_tension/ folder.
 We ran 10000 frames for each system to get a pretty convergent pressure profile. And an example of POPC:POPC bilayer is included.
 To avoid uploading large files, run_press.out and run_ewald.out are not included. They can be generated when running NAMD post-analysis for lateral pressure
+
+
+Bending rigidity modulus (Kc) calculation:
+------------------------
+The Kc calculation mainly refers to two papers (DOI: 10.1039/c7cp01921a and DOI 10.1186/s12859-016-1003-z), which use real-space fluctuation analysis of molecular dynamics simulations and present an open source implementation of the method as a set of Python modules using the computational framework OpenStructure. The modules are freely available through GitHub at https://github.com/njohner/ost_pymodules/ while OpenStructure can be obtained at http://www.openstructure.org. My calculation of Kc is using docker platform of OpenStructure with Johner's lipid analysis scripts(ost_pymodules).
