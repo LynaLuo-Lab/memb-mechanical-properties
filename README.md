@@ -18,5 +18,5 @@ Package Link from Milka's paper(doi.org/10.1016/j.bpj.2018.12.016): https://www.
 leaflet tension calculation:
 ------------------------
 I refer to Milka's paper(doi.org/10.1016/j.bpj.2018.12.016) provided in pressure_profiles_NAMD.zip, which is also uploaded in the bilayer_tension/ folder.
-We ran 10000 frames for each system to get a pretty convergent pressure profile. And an example of POPC:POPC bilayer is included
-To avoid large files, run_press.out and run_ewald.out are not included. They can be generated when running NAMD post-analysis for lateral pressure
+We ran 10000 frames for each system to get a pretty convergent pressure profile. And an example of POPC:POPC bilayer is included.
+To avoid uploading large files, run_press.out and run_ewald.out are not included. They can be generated when running NAMD post-analysis for lateral pressure
